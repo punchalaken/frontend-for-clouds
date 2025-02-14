@@ -1,20 +1,23 @@
-# Frontend
+# Запуск frontend части приложения локаньно: 
 
-Frontend уже собран, всё что Вам нужно, это:
-
-1. Перейти в папку со фронтендом.
+1. Скачать репозиторий:
 ```
-cd /home/semen/diplom_MyCloud/frontend/
+git clone https://github.com/punchalaken/frontend-for-clouds
 ```
 
-2. Запустить установку зависимостей:
+2. Переходим в папку с frontend частью проекта.
 ```
-npm install
-```
-
-3. Запустить сборку командой:
-```
-npm run build
+cd frontend-for-clouds
 ```
 
-4. Дождаться надписи что сборка собрана.
+2. Устанавливаем зависимости.
+```
+npm i 
+```
+
+3. Запускаем проект локально для разработки.
+```
+npm run dev
+```
+
+###[Запуск bakcend части приложениея](https://github.com/punchalaken/Cloud-for-fiels/edit/main/README.md)
