@@ -20,4 +20,6 @@ npm i
 npm run dev
 ```
 
-###[Запуск bakcend части приложениея](https://github.com/punchalaken/Cloud-for-fiels/edit/main/README.md)
+[Запуск bakcend части приложениея](https://github.com/punchalaken/Cloud-for-fiels/edit/main/README.md)
+
+### Запуск на сервере: 
