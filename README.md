@@ -41,3 +41,4 @@ npm run build
 ```
 scp -r dist [ubuntu]@[url]:/home/[ubuntu]/Cloud-for-fiels/
 ```
+Где ubuntu - имя юзера, а url - урл сервера
