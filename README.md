@@ -33,8 +33,11 @@ git clone https://github.com/punchalaken/frontend-for-clouds
 ```
 cd frontend-for-clouds
 ```
-3. Вписать в консоле: 
-
+3. Билдим проект:
+```
+npm run build
+```
+4. Вписать в консоле: 
 ```
 scp -r dist [ubuntu]@[url]:/home/[ubuntu]/Cloud-for-fiels/
 ```
