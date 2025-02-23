@@ -56,7 +56,6 @@ function FileEditPanel({ currentFile, setCurrentFile, setFiles }: FileEditPanelP
           const response = await getDownloadLink(currentFile.id);
           const data = response.data;
           const link = `${BASE_URL}/link/${data.link}/`;
-          console.log(`Ссылка для скачивания: ${link}`);
           setDownloadLink(link);
         } catch (error) {
           console.error("Ошибка при получении ссылки:", error);

@@ -39,12 +39,10 @@ const Login: React.FC = () => {
 			} else {
 				localStorage.removeItem('username');
 			}
-			console.log('Логин:', username, 'Пароль:', password);
 
 			const response = await logIn(username, password);
 			dispatch(loginSuccess(response.user));
 			navigate('/folder');
-			console.log('Вы успешно авторизованы! =)');
 		} catch (error) {
 			console.error('Ошибка входа:', error);
 			const errorMessage = getError(error as FetchBaseQueryError | SerializedError);

@@ -45,7 +45,6 @@ const SignUp = () => {
 					setError('Ошибка: Не удалось получить детали ошибки.');
 				}
 			} else {
-				console.log('User created successfully', result.data);
 				navigate('/login');
 			}
 		} catch (err) {

@@ -27,16 +27,13 @@ function FilePage() {
     let response;
     const fetchData = async () => {
       if (userI !== 0) {
-        console.log(`1111111111111111111111: ${userI}`);
         response = await getUserFiles(userI);
         window.sharedUserId = 0;
       } else {
-        console.log(`2222222222222222222222: ${userI}`);
         response = await getUserFiles(userId);
       }
 
       const data = response.data;
-      console.log(`Answer on load:`, data);
       setFiles(data);
     }
     fetchData();
@@ -54,15 +51,9 @@ function FilePage() {
     formData.append('path', `uploads/${loginUser.username}_folder/${file.name}`);
     formData.append('size', file.size.toString());
     formData.append('user_id', loginUser.id.toString()); // вот тут ID пользователя
-    console.log(`formData1: ${formData.get('size')}`);
-    console.log(`formData2: ${formData.get('path')}`);
-    console.log(`formData3: ${formData.get('user_id')}`);
 
     try {
       const response = await createFile(formData);
-      console.log(`formData: ${formData}`);
-      console.log("Send File answer: ", response);
-      console.log(files, [...files, response]);
       setFiles([...files, response]);
       setCurrentFile(response);
     } catch (error) {
