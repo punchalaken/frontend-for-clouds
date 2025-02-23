@@ -35,7 +35,8 @@ const FileRename: React.FC<FileRenameProps> = ({ currentFile, setForm, setCurren
       user_id: userId || currentStorageUser
     };
     const response = await patchFile(patchData, currentStorageUser);
-    const data = response.data;    // window.location.reload();
+    const data = response.data;
+    // window.location.reload();
     if (response.status === 200) {
       setCurrentFile(data);
       setFiles((files) =>
