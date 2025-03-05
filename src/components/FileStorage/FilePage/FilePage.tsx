@@ -73,7 +73,6 @@ function FilePage() {
 			console.error("Error uploading file:", error);
 		}
 	};
-
 	return (
 		// <FileContext.Provider value={{ currentStorageUser, setCurrentStorageUser }}>
 		<>
